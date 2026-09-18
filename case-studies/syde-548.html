@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redesigning Course Selection for Cognitive Load — Khali Abdi</title>
+  <meta name="description" content="A user research portfolio on cognitive load and accessibility in academic course selection systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <div id="loader-pieces">
+      <div class="lp" style="animation-delay:0.0s"><svg viewBox="0 0 52 48" fill="none"><path d="M2 2h14v4a5 5 0 0 1 10 0V2h16v14h-4a5 5 0 0 0 0 10h4v14H26v-4a5 5 0 0 0-10 0v4H2V26h4a5 5 0 0 0 0-10H2Z" fill="#1C0828" stroke="rgba(123,52,144,0.3)" stroke-width="0.8"/></svg></div>
+      <div class="lp" style="animation-delay:0.1s"><svg viewBox="0 0 52 48" fill="none"><path d="M2 2h14v4a5 5 0 0 1 10 0V2h16v14h-4a5 5 0 0 0 0 10h4v14H26v-4a5 5 0 0 0-10 0v4H2V26h4a5 5 0 0 0 0-10H2Z" fill="#7B3490" stroke="#A855A0" stroke-width="0.8"/></svg></div>
+      <div class="lp" style="animation-delay:0.2s"><svg viewBox="0 0 52 48" fill="none"><path d="M2 2h14v4a5 5 0 0 1 10 0V2h16v14h-4a5 5 0 0 0 0 10h4v14H26v-4a5 5 0 0 0-10 0v4H2V26h4a5 5 0 0 0 0-10H2Z" fill="#1C0828" stroke="rgba(123,52,144,0.3)" stroke-width="0.8"/></svg></div>
+      <div class="lp" style="animation-delay:0.3s"><svg viewBox="0 0 52 48" fill="none"><path d="M2 2h14v4a5 5 0 0 1 10 0V2h16v14h-4a5 5 0 0 0 0 10h4v14H26v-4a5 5 0 0 0-10 0v4H2V26h4a5 5 0 0 0 0-10H2Z" fill="#3D1A6E" stroke="rgba(168,85,160,0.4)" stroke-width="0.8"/></svg></div>
+      <div class="lp" style="animation-delay:0.4s"><svg viewBox="0 0 52 48" fill="none"><path d="M2 2h14v4a5 5 0 0 1 10 0V2h16v14h-4a5 5 0 0 0 0 10h4v14H26v-4a5 5 0 0 0-10 0v4H2V26h4a5 5 0 0 0 0-10H2Z" fill="#7B3490" stroke="#C89AE0" stroke-width="1.2"/></svg></div>
+      <div class="lp" style="animation-delay:0.5s"><svg viewBox="0 0 52 48" fill="none"><path d="M2 2h14v4a5 5 0 0 1 10 0V2h16v14h-4a5 5 0 0 0 0 10h4v14H26v-4a5 5 0 0 0-10 0v4H2V26h4a5 5 0 0 0 0-10H2Z" fill="#3D1A6E" stroke="rgba(168,85,160,0.4)" stroke-width="0.8"/></svg></div>
+      <div class="lp" style="animation-delay:0.6s"><svg viewBox="0 0 52 48" fill="none"><path d="M2 2h14v4a5 5 0 0 1 10 0V2h16v14h-4a5 5 0 0 0 0 10h4v14H26v-4a5 5 0 0 0-10 0v4H2V26h4a5 5 0 0 0 0-10H2Z" fill="#1C0828" stroke="rgba(123,52,144,0.3)" stroke-width="0.8"/></svg></div>
+      <div class="lp" style="animation-delay:0.7s"><svg viewBox="0 0 52 48" fill="none"><path d="M2 2h14v4a5 5 0 0 1 10 0V2h16v14h-4a5 5 0 0 0 0 10h4v14H26v-4a5 5 0 0 0-10 0v4H2V26h4a5 5 0 0 0 0-10H2Z" fill="#7B3490" stroke="#A855A0" stroke-width="0.8"/></svg></div>
+      <div class="lp" style="animation-delay:0.8s"><svg viewBox="0 0 52 48" fill="none"><path d="M2 2h14v4a5 5 0 0 1 10 0V2h16v14h-4a5 5 0 0 0 0 10h4v14H26v-4a5 5 0 0 0-10 0v4H2V26h4a5 5 0 0 0 0-10H2Z" fill="#1C0828" stroke="rgba(123,52,144,0.3)" stroke-width="0.8"/></svg></div>
+    </div>
+    <div id="loader-name">Khali Abdi</div>
+    <div id="loader-bar-wrap"><div id="loader-bar"></div></div>
+    <div id="loader-tagline">life is a puzzle — this is my board</div>
+  </div>
+
+  <div id="page-body">
+
+    <header id="nav">
+      <a href="../index.html" id="nav-name">Khali Abdi</a>
+      <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <nav id="nav-links" aria-label="Main navigation">
+        <a href="../index.html#work" class="nav-link">Work</a>
+        <a href="../index.html#resume" class="nav-link">Resume</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <section id="cs-hero" aria-label="Case study introduction">
+      <a href="../index.html#work" class="cs-back">← Back to work</a>
+      <p class="cs-eyebrow">User Research Portfolio · SYDE 548, University of Waterloo</p>
+      <h1 class="cs-title">Inclusive Persona Development: Designing for Cognitive Load and Accessibility in Academic Systems</h1>
+      <p class="cs-lead">
+        Engineering course selection at UWaterloo forces third- and fourth-year students through an
+        unfiltered catalog, disconnected tools, and confusing feedback — with real cognitive and emotional
+        cost. This portfolio uses course selection as the vehicle to practice a full user research toolkit,
+        centered on cognitive load and accessibility for neurodivergent and international students.
+      </p>
+
+      <div class="cs-meta-row">
+        <div class="cs-meta-item">
+          <div class="cs-meta-k">Methods</div>
+          <div class="cs-meta-v">Qualitative research,  Journey mapping, Heuristic evaluation</div>
+        </div>
+        <div class="cs-meta-item">
+          <div class="cs-meta-k">Domain</div>
+          <div class="cs-meta-v">Higher education, accessibility</div>
+        </div>
+        <div class="cs-meta-item">
+          <div class="cs-meta-k">Type</div>
+          <div class="cs-meta-v">Academic, independent</div>
+        </div>
+        <div class="cs-meta-item">
+          <div class="cs-meta-k">Year</div>
+          <div class="cs-meta-v">2025</div>
+        </div>
+      </div>
+    </section>
+
+    <div id="cs-body">
+
+      <div class="cs-section">
+        <p class="cs-section-k">The problem</p>
+        <h2 class="cs-section-h">Students aren't given the tools to personalize their own degree.</h2>
+        <p class="cs-section-p">
+          UWaterloo engineering students can't personalize their schedules until upper years, when they
+          finally choose technical and complementary studies electives. They're met with a long, unfiltered
+          course catalog, many of which they're not eligible for or that won't count toward their degree.
+          Specializations add another layer of complexity, and existing tools don't surface certificates,
+          options, or minors that could enhance a degree. Finding courses students are passionate about,
+          can take, and that count toward graduation has proven tiresome and error-prone.
+        </p>
+        <p class="cs-callout">
+          Redesign course selection so students can efficiently choose electives while tracking degree
+          requirements and surfacing opportunities to enhance their degree.
+        </p>
+      </div>
+
+      <div class="cs-section">
+        <p class="cs-section-k">Goals</p>
+        <h2 class="cs-section-h">Effective, efficient, and confidence-building — before, during, and after selection</h2>
+        <p class="cs-section-p">
+          I split the experience into three moments, each with its own goal: students feel <em>empowered</em>
+          preparing for selection, stay <em>motivated</em> to complete it on time, and <em>trust</em> that
+          their choices fulfill their degree requirements once submitted. Usability goals followed the same
+          structure: effective to use (≥80% of selected courses meet requirements), efficient to use
+          (≤15 minutes to finalize a term), and satisfying to use (≥8/10 on a Likert scale).
+        </p>
+      </div>
+
+      <div class="cs-section">
+        <p class="cs-section-k">Persona</p>
+        <h2 class="cs-section-h">Designing around Jordan, not the average student</h2>
+        <p class="cs-section-p">
+          To keep the redesign honest to real constraints, I built a proto-persona with a specific
+          accessibility and diversity lens rather than a composite "typical" student.
+        </p>
+        <div class="cs-personas">
+          <div class="cs-persona-card">
+            <p class="cs-persona-name">Jordan Baker</p>
+            <p class="cs-persona-role">22, Third-Year Mechanical Engineering, International Student</p>
+            <ul class="cs-persona-list">
+              <li>Diagnosed with ADHD; experiences decision fatigue filtering courses without guidance</li>
+              <li>Relies on Notion and Excel to track degree progress because Quest can't</li>
+              <li>Anxious about mistakes that could delay graduation</li>
+              <li>Wants a consolidated tool with filters based on interest, availability, and remaining requirements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-section">
+        <p class="cs-section-k">Research methods</p>
+        <h2 class="cs-section-h">Love letters, journey maps, and AI-assisted thematic analysis</h2>
+        <p class="cs-section-p">
+          Three participants, two fourth-year Chemical Engineering students and one proxy playing the
+          Jordan persona, each wrote a Love Letter and a Break-Up Letter to the course selection experience,
+          then walked through a pre-defined journey map scoring each step on a Likely-to-Recommend scale.
+          The letters and comments were transcribed and run through an inductive thematic analysis, first
+          with ChatGPT-4.0 as a starting pass and then refined manually against what I'd observed firsthand
+          in the sessions.
+        </p>
+        <p class="cs-section-p">
+          The lowest-scoring points in the journey were checking degree requirements and confirming
+          eligibility. Participants consistently said a visit to their academic advisor was needed to
+          feel confident, even after using every tool available to them.
+        </p>
+      </div>
+
+      <div class="cs-section">
+        <p class="cs-section-k">Findings</p>
+        <h2 class="cs-section-h">Five themes, three of them pain</h2>
+        <table class="cs-theme-table">
+          <tr><th>Theme</th><th>Frequency</th><th>What it captures</th></tr>
+          <tr><td>Fragmented information ecosystem</td><td>17</td><td>Frustration at needing Quest, UW Flow, the Schedule of Classes, and degree checklists all at once</td></tr>
+          <tr><td>System feedback &amp; clarity gaps</td><td>7</td><td>No clear feedback until submission — "what does that even mean, I don't meet the prerequisites?"</td></tr>
+          <tr><td>Poor visual &amp; UX design</td><td>5</td><td>Outdated, unintuitive layouts across every tool in the process</td></tr>
+          <tr><td>Search &amp; filter functionality</td><td>5</td><td>A rare bright spot — students liked alphabetized course lists</td></tr>
+          <tr><td>Communication &amp; planning support</td><td>4</td><td>Email reminders were the one thing keeping students accountable</td></tr>
+        </table>
+        <p class="cs-section-p" style="margin-top:20px">
+          A follow-up literature review and a modified fly-on-the-wall pass through the UWaterloo subreddit
+          confirmed the pattern: students consistently improvise spreadsheets and third-party trackers
+          because no single tool consolidates degree progress, and academic jargon compounds the problem
+          for international students navigating an unfamiliar system.
+        </p>
+      </div>
+
+      <div class="cs-section">
+        <p class="cs-section-k">Heuristic evaluation</p>
+        <h2 class="cs-section-h">Two critical failures, hiding in plain sight</h2>
+        <p class="cs-section-p">
+          Evaluating five tools in the process against Norman's design principles surfaced two critical
+          failures: the Academic Calendar gives no guidance preventing students from planning against an
+          outdated year's requirements, and the course cart doesn't surface prerequisite or scheduling
+          conflicts until the moment of submission, by which point a student may need to restart the
+          entire selection process.
+        </p>
+      </div>
+
+      <div class="cs-section">
+        <p class="cs-section-k">Reflection</p>
+        <h2 class="cs-section-h">Debiasing my own assumptions was the hardest part</h2>
+        <p class="cs-section-p">
+          Narrowing scope to third- and fourth-year engineering students was a deliberate trade-off. It was broad enough to matter, specific enough to design for honestly. The proto-persona and persona brief exercises pushed me to catch my own bias in real time: my first instinct was to build accessibility considerations I was already familiar with, rather than sit with edge cases I hadn’t personally experienced. GenAI was useful for a fast first pass on thematic analysis, but it flattened UWaterloo-specific context until I fed it my own material. It was a reminder that tools built for general users need a human closing the loop on specificity.
+        </p>
+      </div>
+
+    </div>
+
+    <footer id="contact" aria-label="Contact">
+      <div class="contact-inner">
+        <h2 class="contact-heading">Open to human factors research and engineering roles.</h2>
+        <div class="contact-links">
+          <a href="mailto:khali@khaliabdi.com" class="contact-link">khali@khaliabdi.com</a>
+          <a href="https://linkedin.com/in/khaliabdi" class="contact-link" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="../assets/khali-abdi-resume.pdf" class="contact-link" target="_blank">Resume</a>
+        </div>
+        <p class="contact-sub">Cornell MS Human-Environment Relations, Fall 2026.</p>
+      </div>
+    </footer>
+
+  </div><!-- /#page-body -->
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
